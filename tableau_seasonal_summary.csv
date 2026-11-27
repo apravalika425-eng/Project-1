@@ -1,0 +1,17 @@
+season,category,revenue,profit,units_sold
+Autumn,Apparel,9916.02,2913.02,304
+Autumn,Beauty,4976.51,1373.75,214
+Autumn,Electronics,26866.69,7827.2300000000005,305
+Autumn,Home & Kitchen,13822.25,3628.05,279
+Spring,Apparel,12297.87,3344.93,370
+Spring,Beauty,5778.1,1628.81,238
+Spring,Electronics,20571.57,5883.25,236
+Spring,Home & Kitchen,11430.72,3277.25,235
+Summer,Apparel,9514.41,2523.02,297
+Summer,Beauty,5613.66,1641.26,232
+Summer,Electronics,26638.79,7741.4400000000005,318
+Summer,Home & Kitchen,10820.38,2974.5,222
+Winter,Apparel,6876.63,1963.15,225
+Winter,Beauty,4924.98,1389.07,211
+Winter,Electronics,19442.98,5323.89,237
+Winter,Home & Kitchen,13541.1,3724.46,289

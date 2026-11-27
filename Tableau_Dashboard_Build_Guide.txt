@@ -1,0 +1,32 @@
+TABLEAU DASHBOARD BUILD GUIDE
+=============================
+
+Data source
+- Connect Tableau to retail_transactions.csv.
+- Set order_date to Date; revenue, profit, quantity, inventory_days to Number.
+- The included sample file is synthetic and is intended for a demonstrator project.
+
+Calculated fields
+1. Profit Margin = SUM([profit]) / SUM([revenue])
+2. Average Inventory Days = AVG([inventory_days])
+3. Units Sold = SUM([quantity])
+
+Recommended dashboard (one dashboard, 1200 x 800)
+- Top KPI cards: SUM(Revenue), SUM(Profit), Profit Margin, SUM(Quantity)
+- Category Profitability: horizontal bars; Category on Rows, SUM(Profit) on Columns; color by Profit Margin.
+- Sub-category Inventory: bars sorted descending by AVG(Inventory Days); include Sub-category and Category.
+- Seasonal Behavior: line chart; Season/Month on Columns, SUM(Revenue) on Rows, Category on Color.
+- Regional Performance: highlight table; Region x Category, color by Profit Margin.
+- Filters (apply to all worksheets): Region, Category (Product Type), Sub-category, Season.
+
+Suggested dashboard title:
+Retail Business Performance & Profitability
+
+Files supplied
+- retail_transactions.csv: main Tableau data source
+- tableau_*_summary.csv: pre-aggregated supporting views
+- retail_analysis.sql: SQL analysis
+- retail_analysis.py: Python analysis
+- Retail_Performance_Report.pdf: two-page project report
+
+To create the native Tableau workbook: open Tableau Desktop/Public, connect to retail_transactions.csv, build the worksheets above, add them to a dashboard, expose the four filters, then save as .twb or .twbx.
